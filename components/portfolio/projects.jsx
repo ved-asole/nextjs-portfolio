@@ -60,12 +60,12 @@ export default function Projects() {
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
           {
             projects.map((project) => (
-              <ShineBorder
+              <ShineBorder key={project.id}
                 // className="text-center text-2xl font-bold capitalize mt-20 p-0"
                 className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl mt-20 p-0"
                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
               >
-                < Card key={project.id} className="flex flex-col" >
+                <Card className="flex flex-col" >
                   <CardHeader>
                     <CardTitle>{project.name}</CardTitle>
                     <CardDescription>{project.description}</CardDescription>
