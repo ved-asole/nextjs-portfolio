@@ -57,7 +57,7 @@ export default function Projects() {
     <section id="projects" className="flex min-h-screen items-center justify-center bg-background px-4 py-16">
       <div className="container">
         <h2 className="mb-8 text-3xl font-bold md:text-4xl">Projects</h2>
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
           {
             projects.map((project) => (
               <ShineBorder key={project.id}
