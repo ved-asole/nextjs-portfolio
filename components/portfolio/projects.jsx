@@ -62,10 +62,10 @@ export default function Projects() {
             projects.map((project) => (
               <ShineBorder key={project.id}
                 // className="text-center text-2xl font-bold capitalize mt-20 p-0"
-                className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl mt-20 p-0"
+                className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl md:mt-20 p-0"
                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
               >
-                <Card className="flex flex-col" >
+                <Card className="flex z-5 flex-col border-none" >
                   <CardHeader>
                     <CardTitle>{project.name}</CardTitle>
                     <CardDescription>{project.description}</CardDescription>
@@ -78,7 +78,7 @@ export default function Projects() {
                       height={200}
                       width={200}
                     />
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground mt-2">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                   </CardContent>
