@@ -19,8 +19,8 @@ export default function Hero() {
   // }, [theme]);
 
   return (
-    <section id="home" className="flex min-h-screen items-center justify-center bg-background md:px-20 pt-24 py-16">
-      <div className="container grid items-center gap-6 lg:grid-cols-2">
+    <section id="home" className="flex min-h-screen items-center justify-center bg-background md:px-20 pt-16 md:pt-24 md:py-16">
+      <div className="container grid items-center gap-8 lg:grid-cols-2">
         <div className="flex max-w-[980px] flex-col items-start gap-2">
           <BlurFade inView>
             <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl lg:text-5xl">
@@ -57,7 +57,7 @@ export default function Hero() {
             </div>
           </BlurFade>
         </div>
-        <div className="flex justify-center lg:justify-end">
+        <div className="flex justify-center lg:justify-end order-first md:order-last">
           <BlurFade delay={0.25} inView>
             <div className="h-64 w-64 overflow-hidden rounded-full border-4 border-primary md:h-80 md:w-80 lg:h-96 lg:w-96">
               <Image
