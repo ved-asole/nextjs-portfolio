@@ -33,7 +33,7 @@ export default function Experience() {
   ]
 
   return (
-    <section id="experience" className="flex min-h-screen items-center justify-center bg-muted px-4 py-16">
+    <section id="experience" className="flex min-h-screen items-center justify-center bg-muted md:px-4 py-16">
       <div className="container">
         <h2 className="mb-8 text-3xl font-bold md:text-4xl">Work Experience</h2>
         <div className="space-y-6">
