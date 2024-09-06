@@ -30,8 +30,8 @@ export default function Contact() {
   return (
     <section id="contact" className="flex min-h-screen items-center justify-center bg-background md:px-4 py-16">
       <div className="container">
-        <h2 className="mb-8 text-3xl font-bold md:text-4xl">Contact Me</h2>
-        <Card className="md:mx-auto mt-20 max-w-2xl">
+        <h2 className="mt-8 text-3xl font-bold md:text-4xl">Contact Me</h2>
+        <Card className="md:mx-auto mt-8 md:mt-20 max-w-2xl">
           <CardHeader>
             <CardTitle>Get in Touch</CardTitle>
             <CardDescription>Fill out the form below and I&apos;ll get back to you as soon as possible.</CardDescription>
