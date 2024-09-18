@@ -37,14 +37,13 @@ export default function Header() {
       href: "#experience"
     },
     {
+      name: "Blog",
+      href: "https://blog.vedasole.cloud"
+    },
+    {
       name: "Contact",
       href: "#contact"
     }
-    // ,
-    // {
-    //   name:"Resume",
-    //   href:"#resume"
-    // }
   ]
 
   return (
