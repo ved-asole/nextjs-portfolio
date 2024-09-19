@@ -45,13 +45,13 @@ export default function Experience() {
               </CardHeader>
               <CardContent>
                 <p className="font-semibold">{job.period}</p>
-                <p className="mt-2 ps-5 text-sm text-muted-foreground">
+                <div className="mt-2 ps-5 text-sm text-muted-foreground">
                   <ol className="list-disc list-inside">
                     {job.description.map((desc, index) => (
                       <li key={index}>{desc}</li>
                     ))}
                   </ol>
-                </p>
+                </div>
               </CardContent>
             </Card>
           ))}
