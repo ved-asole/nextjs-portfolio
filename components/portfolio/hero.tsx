@@ -32,7 +32,7 @@ export default function Hero() {
               Software Engineer and Designer
             </h2>
           </BlurFade>
-          <BlurFade delay={0.50} inView>
+          <BlurFade delay={0.25} inView>
             <p className="max-w-[700px] text-lg text-muted-foreground">
               Crafting elegant solutions to complex problems with clean, efficient code.
             </p>
