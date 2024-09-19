@@ -32,7 +32,7 @@ export default function Technologies() {
         </BlurFade>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mt-16">
           {techStack.map((tech) => (
-            <BlurFade delay={0.50} inView>
+            <BlurFade delay={0.50} key={tech.name} inView>
               <Card key={tech.name} className="flex items-center justify-center p-4 text-center">
                 <CardContent className="p-0">
                   <p className="text-2xl mb-2">{tech.icon}</p>
