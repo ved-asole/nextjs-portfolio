@@ -33,10 +33,10 @@ export default function Projects() {
       id: 2,
       name: 'Blog Application API',
       title: 'An Blog Appication Backend',
-      description: 'An Blog Appication API made with Java, Spring Boot, AWS RDS and MYSQL',
+      description: 'An Blog Appication API made with Java, Spring Boot and AWS RDS',
       image: '/blog-application-api.png',
       website: 'https://ekart.vedasole.cloud/',
-      github: 'https://github.com/ved-asole/blog-application-api'
+      github: 'https://github.com/ved-asole/eKart-ecommerce-app'
     },
     {
       id: 3,
