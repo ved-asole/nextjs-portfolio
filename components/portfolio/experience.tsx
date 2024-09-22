@@ -1,5 +1,6 @@
 'use client';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
+import BlurFade from "../magicui/blur-fade";
 
 export default function Experience() {
 
@@ -35,27 +36,32 @@ export default function Experience() {
   return (
     <section id="experience" className="flex min-h-screen items-center justify-center bg-muted md:px-4 py-16">
       <div className="container">
-        <h2 className="mb-8 text-3xl font-bold md:text-4xl">Work Experience</h2>
+        <BlurFade delay={0.25} inView>
+          <h2 className="mb-8 text-3xl font-bold md:text-4xl">Work Experience</h2>
+        </BlurFade>
         <div className="space-y-6">
           {experiences.map((job, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle>{job.title}</CardTitle>
-                <CardDescription>{job.company}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="font-semibold">{job.period}</p>
-                <div className="mt-2 ps-5 text-sm text-muted-foreground">
-                  <ol className="list-disc list-inside">
-                    {job.description.map((desc, index) => (
-                      <li key={index}>{desc}</li>
-                    ))}
-                  </ol>
-                </div>
-              </CardContent>
-            </Card>
+            <BlurFade key={index} delay={0.25} inView>
+              <Card>
+                <CardHeader>
+                  <CardTitle>{job.title}</CardTitle>
+                  <CardDescription>{job.company}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="font-semibold">{job.period}</p>
+                  <div className="mt-2 ps-5 text-sm text-muted-foreground">
+                    <ol className="list-disc list-inside">
+                      {job.description.map((desc, index) => (
+                        <li key={index}>{desc}</li>
+                      ))}
+                    </ol>
+                  </div>
+                </CardContent>
+              </Card>
+            </BlurFade>
           ))}
         </div>
+        {/* </BlurFade> */}
       </div>
     </section>
   )

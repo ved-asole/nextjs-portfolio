@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 // import Particles from '@/components/magicui/particles';
 // import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
+import BlurFade from "../magicui/blur-fade";
 
 export default function Contact() {
 
@@ -30,7 +31,10 @@ export default function Contact() {
   return (
     <section id="contact" className="flex min-h-screen items-center justify-center bg-background md:px-4 py-16">
       <div className="container">
-        <h2 className="mt-8 text-3xl font-bold md:text-4xl">Contact Me</h2>
+        <BlurFade delay={0.25} inView>
+          <h2 className="mt-8 text-3xl font-bold md:text-4xl">Contact Me</h2>
+        </BlurFade>
+        <BlurFade delay={0.25} inView>
         <Card className="md:mx-auto mt-8 md:mt-20 max-w-2xl">
           <CardHeader>
             <CardTitle>Get in Touch</CardTitle>
@@ -60,6 +64,7 @@ export default function Contact() {
             </form>
           </CardContent>
         </Card>
+        </BlurFade>
       </div>
       {/* <Particles
         className="absolute inset-0 -z-30 min-h-full min-w-full"
