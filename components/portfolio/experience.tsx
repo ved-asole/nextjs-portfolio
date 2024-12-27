@@ -6,9 +6,23 @@ export default function Experience() {
 
   const experiences = [
     {
+      title: 'Senior Software Engineer',
+      company: 'HCLTech',
+      period: 'Oct 2024 - Present',
+      description: [
+        "Engineered Java Spring Boot backend services, resulting in a 10-15% improvement in application performance through code optimizationand refactoring.",
+        "Developed React-based frontend components with Redux, enhancing user experience and increasing engagement metrics by 10%",
+        "Implemented RESTful APIs and microservices, supporting 1M+ monthly requests and reducing API response times by 15-20%",
+        "Refined code quality and performance through advanced debugging and optimization, decreasing bug reports by 20%.",
+        "Established CI/CD pipelines with Jenkins and Docker, reducing deployment time by 25%",
+        "Boosted application performance and scalability, contributing to a 15% increase in system reliability and a 5% reduction in downtime.",
+        "Received the Spot Award and Livewire R&R Award for exceptional performance and impactful optimizations, increasing application performance by 10-15%"
+      ]
+    },
+    {
       title: 'Software Engineer',
       company: 'HCLTech',
-      period: 'Nov 2021 - Present',
+      period: 'Nov 2021 - Oct 2024',
       description: [
         "Developed and Maintained: Actively developed and maintained Java Spring Boot applications, ensuring high performance and scalability.",
         "Code Quality and Collaboration: Performed rigorous code checks and collaborated closely with developers to enhance application quality and performance.",
