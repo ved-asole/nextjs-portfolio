@@ -38,7 +38,7 @@ export default function Header() {
     },
     {
       name: "Blog",
-      href: "https://blog.vedasole.cloud"
+      href: "https://blog.vedasole.me"
     },
     {
       name: "Contact",
