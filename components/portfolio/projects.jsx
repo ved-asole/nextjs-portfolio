@@ -26,7 +26,7 @@ export default function Projects() {
       title: 'An E-Commerce App',
       description: 'An E-Commerce App made with React, Java, Spring Boot, AWS',
       image: '/ekart.jpeg',
-      website: 'https://ekart.vedasole.cloud/',
+      website: 'https://ekart.vedasole.me/',
       github: 'https://github.com/ved-asole/eKart-ecommerce-app'
     },
     {
@@ -35,7 +35,7 @@ export default function Projects() {
       title: 'An Blog Appication Backend',
       description: 'An Blog Appication API made with Java, Spring Boot and AWS RDS',
       image: '/blog-application-api.png',
-      website: 'https://ekart.vedasole.cloud/',
+      website: 'https://ekart.vedasole.me/',
       github: 'https://github.com/ved-asole/eKart-ecommerce-app'
     },
     {
@@ -44,7 +44,7 @@ export default function Projects() {
       title: 'An Online Teaching Academy',
       description: 'An Online Teaching Academy made with Java, Spring Boot and Thymeleaf',
       image: '/vedveera-academy.png',
-      website: 'https://ekart.vedasole.cloud/',
+      website: 'https://ekart.vedasole.me/',
       github: 'https://github.com/ved-asole/ved-veera-academy'
     },
     {
@@ -53,7 +53,7 @@ export default function Projects() {
       title: 'Project 4 Title',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       image: '/blog-application-api.png',
-      website: 'https://ekart.vedasole.cloud/',
+      website: 'https://ekart.vedasole.me/',
       github: 'https://github.com/ved-asole/blog-application-api'
     }
   ]
