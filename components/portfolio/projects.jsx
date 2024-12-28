@@ -49,12 +49,12 @@ export default function Projects() {
     },
     {
       id: 4,
-      name: 'Project 4',
-      title: 'Project 4 Title',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      name: 'CrimsonSky',
+      title: 'An Real-time Flight Booking App',
+      description: 'An Real-time Flight Booking App made with NextJS, Java and Spring Boot',
       image: '/blog-application-api.png',
       website: 'https://ekart.vedasole.me/',
-      github: 'https://github.com/ved-asole/blog-application-api'
+      github: 'https://github.com/ved-asole/crimsonsky'
     }
   ]
 
