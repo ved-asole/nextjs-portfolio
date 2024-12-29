@@ -5,19 +5,9 @@ import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import ShineBorder from "../magicui/shine-border";
-// import Particles from '@/components/magicui/particles';
-import { useTheme } from 'next-themes';
 import BlurFade from "../magicui/blur-fade";
-// import { useState, useEffect } from 'react';
 
 export default function Projects() {
-
-  const { theme } = useTheme();
-  // const [color, setColor] = useState("#ffffff");
-
-  // useEffect(() => {
-  //   setColor(theme === "dark" ? "#ffffff" : "#000000");
-  // }, [theme]);
 
   const projects = [
     {
@@ -67,28 +57,27 @@ export default function Projects() {
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
           {
             projects.map((project) => (
-              <BlurFade delay={0.50} key={project.id} inView>
+              <BlurFade key={project.id} delay={0.25} inView>
                 <ShineBorder
                   // className="text-center text-2xl font-bold capitalize mt-20 p-0"
-                  className="relative flex h-[500px] w-full shadow-sm flex-col items-center justify-center overflow-hidden rounded-lg border bg-card 
-                md:shadow-xl md:mt-20 p-0"
+                  className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl md:mt-20 p-0"
                   color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                 >
-                  <Card className="flex z-10 flex-col bg-transparent shadow-none border-0" >
+                  <Card className="flex z-5 flex-col border-none" >
                     <CardHeader>
                       <CardTitle>{project.name}</CardTitle>
-                      <CardDescription>{project.title}</CardDescription>
+                      <CardDescription>{project.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <Image
                         src={project.image}
                         alt={project.name}
-                        className="mb-4 mx-auto rounded-lg object-cover"
-                        height={160}
-                        width={240}
+                        className="mb-4 w-full rounded-lg object-cover"
+                        height={200}
+                        width={200}
                       />
                       <p className="text-sm text-muted-foreground mt-2">
-                        {project.description}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et aliqua.
                       </p>
                     </CardContent>
                     <CardFooter className="flex justify-between">
@@ -111,13 +100,6 @@ export default function Projects() {
             ))}
         </div>
       </div >
-      {/* <Particles
-        className="absolute inset-0 -z-20 min-h-full min-w-full"
-        quantity={500}
-        ease={100}
-        color={color}
-        refresh
-      /> */}
     </section >
   )
 }
