@@ -8,8 +8,12 @@ import Link from "next/link";
 
 export default function Header() {
 
-  const { theme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [themeLogo, setThemeLogo] = useState("/logo.png");
+
+  useEffect(() => {
+    setTheme('dark');
+  }, []);
 
   useEffect(() => {
     if (theme === "dark") {
