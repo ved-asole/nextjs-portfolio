@@ -10,29 +10,29 @@ export default function Portfolio() {
 
   return (
     // <div className="relative flex min-h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-      <div className="min-h-screen">
+    <div className="min-h-screen">
 
-        <main className="flex-1 z-1">
-          {/* Hero Section */}
-          <Hero />
+      <main className="flex-1 z-1">
+        {/* Hero Section */}
+        <Hero />
 
-          {/* Tech Stack Section */}
-          <Technologies />
+        {/* Tech Stack Section */}
+        <Technologies />
 
-          {/* Projects Section */}
-          <Projects />
+        {/* Projects Section */}
+        <Projects />
 
-          {/* Work Experience Section */}
-          <Experience />
+        {/* Work Experience Section */}
+        <Experience />
 
-          {/* Contact Form Section */}
-          <Contact />
+        {/* Contact Form Section */}
+        <Contact />
 
-          <Footer />
+        <Footer />
 
-        </main>
+      </main>
 
-      </div>
+    </div>
     // </div>
   )
 }
