@@ -60,10 +60,10 @@ export default function Projects() {
               <BlurFade key={project.id} delay={0.25} inView>
                 <ShineBorder
                   // className="text-center text-2xl font-bold capitalize mt-20 p-0"
-                  className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl md:mt-20 p-0"
+                  className="relative flex h-auto w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl md:mt-20 p-[1px]"
                   color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                 >
-                  <Card className="flex z-5 flex-col border-none" >
+                  <Card className="flex z-5 flex-col border-none z-10" >
                     <CardHeader>
                       <CardTitle>{project.name}</CardTitle>
                       <CardDescription>{project.description}</CardDescription>
