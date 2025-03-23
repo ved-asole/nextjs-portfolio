@@ -39,17 +39,17 @@ export default function Hero() {
           </BlurFade>
           <BlurFade delay={0.75} inView>
             <div className="mt-4 flex space-x-4">
-              <Link href='mailto:vedasole001@gmail.com'>
+              <Link href='mailto:vedasole001@gmail.com' className="mt-1">
                 <Button>
                   <Mail className="mr-2 h-4 w-4" /> Contact Me
                 </Button>
               </Link>
               <ShineBorder
-                className="relative flex min-w-[30px] min-h-[30px] flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl p-0"
+                className="relative flex min-w-[30px] min-h-[30px] flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl p-[2px]"
                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
               >
-                <Link href='https://github.com/ved-asole'>
-                  <Button variant="outline">
+                <Link href='https://github.com/ved-asole' className="z-10">
+                  <Button variant="outline" className="border-none">
                     <Github className="mr-2 h-4 w-4" /> GitHub
                   </Button>
                 </Link>
