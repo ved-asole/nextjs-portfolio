@@ -75,7 +75,7 @@ export default function Header() {
               </a>
             ))
           }
-          <a href="#resume" className="text-sm font-medium transition-colors hover:text-primary">
+          <a href="https://drive.google.com/file/d/1NiigXkCCJdUb4vg1MZfPGCxRoynT-ynm/view?usp=sharing" target="_blank" className="text-sm font-medium transition-colors hover:text-primary">
             Resume
           </a>
           <ModeToggle />
